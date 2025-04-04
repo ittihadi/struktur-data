@@ -1,0 +1,8 @@
+# Ignore zig files
+.zig-cache
+zig-out
+
+# Ignore report files
+[Ss]creenshots
+*.docx
+.~lock*
