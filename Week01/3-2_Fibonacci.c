@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // Deklarasi Fungsi-fungsi
-int  pangkat(int n);
+int  fibonacci(int n);
 void judul();
 
 int main()
@@ -13,7 +13,7 @@ int main()
     int angka = 10;
     for (int i = 0; i < angka; i++)
     {
-        printf("%d ", pangkat(i));
+        printf("%d ", fibonacci(i));
     }
 
     return 0;
@@ -30,9 +30,9 @@ void judul()
     printf("\n");
 }
 
-int pangkat(int n)
+int fibonacci(int n)
 {
     if (n == 0) return 0;
     if (n == 1) return 1;
-    return pangkat(n - 1) + pangkat(n - 2);
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }

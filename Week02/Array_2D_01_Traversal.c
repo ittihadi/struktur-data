@@ -3,7 +3,7 @@
 
 // Deklarasi fungsi-fungsi
 void judul();
-void hapusData(int arr[][3], int baris, int kolom);
+void traversalArray(int arr[][3], int baris, int kolom);
 
 int main()
 {
@@ -15,13 +15,13 @@ int main()
         {4, 5, 6}};
 
     printf("Hasil Traversal Array 2 Dimensi:\n");
-    hapusData(arr, 2, 3);
+    traversalArray(arr, 2, 3);
 
     return 0;
 }
 
 // Definisi fungsi-fungsi
-void hapusData(int arr[][3], int baris, int kolom)
+void traversalArray(int arr[][3], int baris, int kolom)
 {
     for (int i = 0; i < baris; i++)
     {

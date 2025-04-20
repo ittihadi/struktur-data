@@ -3,7 +3,7 @@
 
 // Deklarasi fungsi-fungsi
 void judul();
-void hapusData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax, int nilaiBaru);
+void updateData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax, int nilaiBaru);
 
 int main()
 {
@@ -30,7 +30,7 @@ int main()
     printf("Masukkan nilai baru: ");
     scanf(" %d", &nilaiBaru);
 
-    hapusData(arr, baris, kolom, 2, 3, nilaiBaru);
+    updateData(arr, baris, kolom, 2, 3, nilaiBaru);
 
     printf("Array setelah pembaruan:\n");
     for (int i = 0; i < 2; i++)
@@ -44,7 +44,7 @@ int main()
 }
 
 // Definisi fungsi-fungsi
-void hapusData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax, int nilaiBaru)
+void updateData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax, int nilaiBaru)
 {
     if (baris < 0 || baris >= barisMax || kolom < 0 || kolom >= kolomMax)
     {

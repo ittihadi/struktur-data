@@ -62,13 +62,13 @@ void hapusDataBerdasarkanIndeks(Node **head, Node **tail, int indeks)
             {
                 *head         = current->next;
                 (*head)->prev = *tail;
-                (*tail)->prev = *head;
+                (*tail)->next = *head;
             }
             else if (current == *tail)
             {
                 *tail         = current->prev;
-                (*head)->next = *head;
-                (*tail)->prev = *tail;
+                (*head)->prev = *tail;
+                (*tail)->next = *head;
             }
             else
             {

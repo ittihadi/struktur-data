@@ -3,7 +3,7 @@
 
 // Deklarasi fungsi-fungsi
 void judul();
-void hapusData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax);
+void bacaData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax);
 
 int main()
 {
@@ -19,13 +19,13 @@ int main()
     int kolom = 0;
     scanf(" %d %d", &baris, &kolom);
 
-    hapusData(arr, baris, kolom, 2, 3);
+    bacaData(arr, baris, kolom, 2, 3);
 
     return 0;
 }
 
 // Definisi fungsi-fungsi
-void hapusData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax)
+void bacaData(int arr[][3], int baris, int kolom, int barisMax, int kolomMax)
 {
     if (baris < 0 || baris >= barisMax || kolom < 0 || kolom >= kolomMax)
     {
