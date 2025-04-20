@@ -4,5 +4,7 @@ zig-out
 
 # Ignore report files
 [Ss]creenshots
+*.png
+*.pdf
 *.docx
 .~lock*
