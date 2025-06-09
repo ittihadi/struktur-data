@@ -8,3 +8,9 @@ zig-out
 *.pdf
 *.docx
 .~lock*
+*.typ
+
+# Ignore test files
+*.txt
+*.bin
+*.dat
